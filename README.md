@@ -4,4 +4,3 @@ QNECS is a quantum computing framework designed to simplify the implementation o
 - **User-friendly Interface:** Intuitive API for easy interaction with quantum algorithms.
 - **Modular Design:** Allows for easy integration of new algorithms and modules.
 - **Visualization Tools:** Built-in utilities for visualizing quantum states and measurements.
-- **Extensive Documentation:** Comprehensive guides and examples to help users get started.

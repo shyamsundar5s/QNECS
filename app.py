@@ -1650,21 +1650,8 @@ def create_live_metrics_empty():
 # 7. APPLICATION START
 # =============================================================================
 
-if __name__ == '__main__':
-    print("🚀 Starting QNECS with SELECTABLE Dataset Integration + Personalized Assessment...")
-    print("📊 Available Datasets:")
-    dataset_info = sim.data_loader.get_dataset_info()
-    for dataset, info in dataset_info.items():
-        print(f"   • {dataset.upper()}: {info['samples']} samples ({info['quality']} quality)")
-    
-    print("👤 Personalized Assessment: Available")
-    
-    print("\n🌐 Dashboard: http://127.0.0.1:8050")
-    print("🎮 Features:")
-    print("   • SELECTABLE dataset integration")
-    print("   • Real-time switching between data sources")
-    print("   • Dataset-specific emotion assessment")
-    print("   • Individual dataset visualization")
-    print("   • PERSONALIZED brain health assessment with questionnaire")
-    
-    app.run(debug=True, port=8050)
+import os
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))  # Render uses 10000 default
+    app.run_server(host="0.0.0.0", port=port)
